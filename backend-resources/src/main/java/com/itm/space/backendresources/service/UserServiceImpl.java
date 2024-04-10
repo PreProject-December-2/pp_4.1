@@ -80,4 +80,5 @@ public class UserServiceImpl implements UserService {
         newUser.setLastName(userRequest.getLastName());
         return newUser;
     }
+
 }

@@ -28,6 +28,7 @@ public class UserController {
     @PostMapping
     @Secured("ROLE_MODERATOR")
     @SecurityRequirement(name = "oauth2_auth_code")
+    "Hello world";
     public void create(@RequestBody @Valid UserRequest userRequest) {
         userService.createUser(userRequest);
     }
